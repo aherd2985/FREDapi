@@ -16,7 +16,6 @@ namespace FredAPI
         public static string apiKey = "your key here";
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             // realtime_start=1776-07-04   realtime_end=9999-12-3   
 
             var services = ServiceProviderBuilder.GetServiceProvider(args);
@@ -38,12 +37,7 @@ namespace FredAPI
                 using (Stream receiveStream = wr.GetResponseStream())
                     using (StreamReader sReader = new StreamReader(receiveStream, Encoding.UTF8))
                         content = sReader.ReadToEnd();
-            Console.WriteLine(content);
-
             return JsonConvert.DeserializeObject<SampleData.Root>(content);
         }
-
-
-
     }
 }
