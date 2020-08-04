@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{82F33354-9728-4FE0-A19F-56E888A577ED}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FredAPI/Program.cs">
+    <Files>
+      <File FileName="FredAPI/Program.cs" Line="16" Column="9" />
+      <File FileName="FredAPI/FredAPI.csproj" />
+      <File FileName="../technoHerder/fredAPI.php" />
+      <File FileName="FredAPI/appsettings.json" />
+      <File FileName="FredAPI/ServiceProviderBuilder.cs" />
+      <File FileName="FredAPI/SampleData.cs" />
+      <File FileName="FredAPI/APIKeys.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FredAPI" expanded="True">
+            <Node name="FredAPI" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FredAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/andrew.herd/Documents/FredAPI/FredAPI/Program.cs" relfile="FredAPI/Program.cs" line="29" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
