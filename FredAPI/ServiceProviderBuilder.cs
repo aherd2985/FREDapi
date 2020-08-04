@@ -16,7 +16,7 @@ namespace FredAPI
                 .Build();
             ServiceCollection services = new ServiceCollection();
 
-            services.Configure<APIKeys>(configuration.GetSection(typeof(APIKeys).FullName));
+            services.Configure<APIKeys>(configuration.GetSection("APIKeys"));
 
             ServiceProvider provider = services.BuildServiceProvider();
             return provider;
