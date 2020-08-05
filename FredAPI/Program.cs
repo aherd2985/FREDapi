@@ -19,7 +19,7 @@ namespace FredAPI
             var services = ServiceProviderBuilder.GetServiceProvider(args);
             var options = services.GetRequiredService<IOptions<APIKeys>>();
 
-            SampleData.Root gnpcaData = CallAPI("GNPCA", new DateTime(2020, 1, 1), DateTime.Now, options.Value.FRED);
+            SampleData.Root gnpcaData = CallAPI("GNPCA", new DateTime(2010, 1, 1), DateTime.Now, options.Value.FRED);
 
             Console.ReadLine();
         }
@@ -27,7 +27,7 @@ namespace FredAPI
         static SampleData.Root CallAPI(string sereisID, DateTime startDt, DateTime endDt, string apiKey)
         {
             string content = string.Empty;
-            string url = string.Format("https://api.stlouisfed.org/fred/series/observations?series_id={0}&realtime_start={1}&realtime_start={1}&realtime_end={2}&api_key={3}&file_type=json", sereisID, startDt.ToString("yyy-MM-dd"), endDt.ToString("yyyy-MM-dd"), apiKey);
+            string url = string.Format("https://api.stlouisfed.org/fred/series/observations?series_id={0}&observation_start={1}&observation_end={2}&api_key={3}&file_type=json", sereisID, startDt.ToString("yyy-MM-dd"), endDt.ToString("yyyy-MM-dd"), apiKey);
             WebRequest myReq = WebRequest.Create(url);
             using (WebResponse wr = myReq.GetResponse())
                 using (Stream receiveStream = wr.GetResponseStream())
