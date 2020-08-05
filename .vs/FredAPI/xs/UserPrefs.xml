@@ -1,20 +1,16 @@
 ﻿<Properties StartupConfiguration="{82F33354-9728-4FE0-A19F-56E888A577ED}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FredAPI/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FredAPI/APIKeys.cs">
     <Files>
-      <File FileName="../technoHerder/fredAPI.php" Line="60" Column="1" />
-      <File FileName="FredAPI/Program.cs" Line="22" Column="58" />
-      <File FileName="FredAPI/FredAPI.csproj" />
-      <File FileName="FredAPI/appsettings.json" />
-      <File FileName="FredAPI/ServiceProviderBuilder.cs" />
-      <File FileName="FredAPI/SampleData.cs" />
-      <File FileName="FredAPI/APIKeys.cs" />
+      <File FileName="../technoHerder/fredAPI.php" Line="71" Column="1" />
+      <File FileName="FredAPI/Program.cs" Line="23" Column="1" />
+      <File FileName="FredAPI/APIKeys.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FredAPI" expanded="True">
             <Node name="FredAPI" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="APIKeys.cs" selected="True" />
             </Node>
           </Node>
         </State>

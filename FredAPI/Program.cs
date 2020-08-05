@@ -15,16 +15,15 @@ namespace FredAPI
     {
         static void Main(string[] args)
         {
-            // realtime_start=1776-07-04   realtime_end=9999-12-3   
-            var services = ServiceProviderBuilder.GetServiceProvider(args);
-            var options = services.GetRequiredService<IOptions<APIKeys>>();
+            IServiceProvider services = ServiceProviderBuilder.GetServiceProvider(args);
+            IOptions<APIKeys> options = services.GetRequiredService<IOptions<APIKeys>>();
 
-            SampleData.Root gnpcaData = CallAPI("GNPCA", new DateTime(2010, 1, 1), DateTime.Now, options.Value.FRED);
+            SampleData.Root gnpcaData = CallLatestDataAPI("GNPCA", new DateTime(2010, 1, 1), DateTime.Now, options.Value.FRED);
 
             Console.ReadLine();
         }
 
-        static SampleData.Root CallAPI(string sereisID, DateTime startDt, DateTime endDt, string apiKey)
+        static SampleData.Root CallLatestDataAPI(string sereisID, DateTime startDt, DateTime endDt, string apiKey)
         {
             string content = string.Empty;
             string url = string.Format("https://api.stlouisfed.org/fred/series/observations?series_id={0}&observation_start={1}&observation_end={2}&api_key={3}&file_type=json", sereisID, startDt.ToString("yyy-MM-dd"), endDt.ToString("yyyy-MM-dd"), apiKey);
