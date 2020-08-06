@@ -16,8 +16,7 @@
           "Microsoft.Extensions.Configuration.Json": "3.1.6",
           "Microsoft.Extensions.Configuration.UserSecrets": "3.1.6",
           "Microsoft.Extensions.DependencyInjection": "3.1.6",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.6",
-          "Newtonsoft.Json": "12.0.3"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.6"
         },
         "runtime": {
           "FredAPI.dll": {}
@@ -196,14 +195,6 @@
             "fileVersion": "3.100.620.31605"
           }
         }
-      },
-      "Newtonsoft.Json/12.0.3": {
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.3.23909"
-          }
-        }
       }
     }
   },
@@ -324,13 +315,6 @@
       "sha512": "sha512-X+h3tO383iMbtFxYp6Al4pgBzbfQKJY8/gd4U7+sZy90XeSfnw5SwHyCiRrAePG6kee4zCGsvQHPCqaTZ876hw==",
       "path": "microsoft.extensions.primitives/3.1.6",
       "hashPath": "microsoft.extensions.primitives.3.1.6.nupkg.sha512"
-    },
-    "Newtonsoft.Json/12.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "path": "newtonsoft.json/12.0.3",
-      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     }
   }
 }
