@@ -1,4 +1,3 @@
-/Users/andrew.herd/Documents/FredAPI/FredAPI/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/andrew.herd/Documents/FredAPI/FredAPI/bin/Debug/netcoreapp3.1/FredAPI.deps.json
 /Users/andrew.herd/Documents/FredAPI/FredAPI/bin/Debug/netcoreapp3.1/FredAPI.runtimeconfig.json
 /Users/andrew.herd/Documents/FredAPI/FredAPI/bin/Debug/netcoreapp3.1/FredAPI.runtimeconfig.dev.json
