@@ -9,7 +9,6 @@ namespace FredAPI
         public static IServiceProvider GetServiceProvider(string[] args)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", true, true)
                 .AddEnvironmentVariables()
                 .AddUserSecrets(typeof(Program).Assembly)
                 .AddCommandLine(args)
